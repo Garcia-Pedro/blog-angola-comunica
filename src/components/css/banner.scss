@@ -1,0 +1,33 @@
+@import '../../App';
+
+.banner
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    background-image: url('../../assets/images/banner/banner-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1{
+            font-family: PoppIns-Bold;
+            font-size: 3rem;
+            color: $MC-Mandalay;
+        }
+
+        p{
+            padding: 2rem 0;
+            max-width: 35rem;
+            font-size: 0.9rem;
+            color: white;
+        }
+    }
+}
+

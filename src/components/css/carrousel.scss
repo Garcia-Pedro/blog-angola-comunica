@@ -1,0 +1,30 @@
+.carrousel
+{
+    width: 100%;
+    display: flex;  
+    overflow-x: auto;
+    justify-content: center;
+    align-items: flex-start;
+    scroll-behavior: smooth;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    padding-left: 12rem;
+
+    @media screen and (max-width: 748px) {
+        padding-left: 22rem;
+    }
+
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+}
+.buttons
+{
+    margin-top: 4rem;
+
+    button{
+        border: none;
+        background: none;
+    }
+}

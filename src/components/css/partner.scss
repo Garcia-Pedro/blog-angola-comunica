@@ -1,0 +1,20 @@
+@import '../../App';
+
+.partner{
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    border: 3px $MC-Mandalay solid; 
+    margin: 1rem;
+    margin-bottom: 0;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

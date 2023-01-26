@@ -1,0 +1,20 @@
+@import '../../App';
+
+h2{
+    font: Poppins-Bold;
+    color: #0e0e0e;
+    position: relative;
+    
+    &::after
+    {
+        content: "";
+        height: 5px;
+        width: 3rem;
+        background-color: $MC-Mandalay;
+        position: absolute;
+        border-radius: 0.4rem;
+        bottom: -0.5rem;
+        left: 4rem;
+        margin-left: 0.6rem;
+    }
+}

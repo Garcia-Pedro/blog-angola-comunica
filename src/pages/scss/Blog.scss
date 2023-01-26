@@ -1,0 +1,208 @@
+@import '../../App';
+
+.articles-section
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        padding: 2rem 0rem;
+        max-width: 35rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+.partners-section
+{   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .partners
+    {
+        display: flex;
+        margin: 2rem 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.contacts-section
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        &:after
+        {
+            left: 3rem;
+        }
+    }
+
+    p{
+        padding: 2rem;
+        font-size: 0.9rem;
+        max-width: 35rem;
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+
+        @media screen and (max-width: 748px) {
+            width: 100%;
+        }
+        
+        .from-user, textarea{
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            font-size: 0.9rem;
+            box-shadow: 0px 0px 30px rgba(100,100,100,0.2);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+        }
+
+        .form-button
+        {
+            width: 100%;
+            border: none;
+            border-radius: 7px;
+            background-color: $MC-Mandalay;
+            color: white;
+            font-size: 0.9rem;
+            padding: 0.8rem 4rem;
+            
+            &:hover
+            {
+                cursor: pointer;
+                filter: brightness(0.9);
+                transition: .4s;
+            }
+        }
+        
+    }
+}
+
+.footer-section
+{
+    display: flex;
+    background-color: #130f07;
+    padding: 0 4rem;
+    padding-top: 4rem;
+    margin-top: 3.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .footer-content
+    {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 748px)
+        {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        nav
+        {
+            ul{
+                li{
+                    padding-bottom: 1rem;
+                    a{
+                        color: white;
+                        font-size: 0.9rem;
+
+                        &:hover
+                        {
+                            filter: brightness(0.7);
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 748px)
+            {
+                margin-top: 3rem;
+            }
+        }
+
+        .footer-contacts
+        {
+            @media screen and (max-width: 748px)
+            {
+                margin-top: 2rem;
+            }
+            span
+            {
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                padding-bottom: 1rem;
+                font-size: 0.8rem;
+
+                @media screen and (max-width: 748px)
+                {
+                    padding: 0;
+                    padding-bottom: 1rem;
+                }
+
+                img{
+                    width: 2rem;
+                    margin-right: 0.5rem;
+                }
+                
+            }
+
+            .social-midias
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    margin: 0 1rem;
+
+                    @media screen and (max-width: 748px)
+                    {
+                        margin: 0;
+                    }
+                    
+                    img{
+                        width: 2rem;
+                        margin-right: 1rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    p{
+        color: white;
+        padding: 2rem 0;
+        padding-top: 4rem;
+        font-size: 0.9rem;
+        text-align: center;
+
+        b
+        {
+            color: white;
+        }
+    }
+}

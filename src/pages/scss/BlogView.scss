@@ -1,0 +1,252 @@
+@import '../../App';@import '../../App';
+
+.articleView-section
+{
+    width: 100%;
+    display: flex;
+
+
+    @media screen and (max-width: 748px) {
+        flex-direction: column;
+    }
+
+    .article-view
+    {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 2rem;
+
+        @media screen and (max-width: 748px) {
+            margin: 0;
+        }
+
+        .date{
+            font-size: 0.8rem;
+            color: rgba(0, 0, 0, 0.435);
+        }
+
+        h2{
+            &::after
+            {
+                left: -0.5rem;
+            }
+        }
+
+        h4{ 
+            padding-top: 2rem;
+        }
+
+        .article-author{
+            font-size: 0.9rem;
+        }
+        .article-image
+        {
+            width: 35rem;
+            margin-top: 2rem;
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            @media screen and (max-width: 748px) {
+                width: 100%;
+            }
+
+            img
+            {
+                width: 100%;
+                padding: 2rem 0;
+            }
+        }
+        .article-content
+        {
+            p{
+                padding: 1rem 0rem;
+                max-width: 45rem;
+                font-size: 0.9rem;
+                text-align: left;
+            }
+            .sources
+            {
+                font-size: 0.9rem;
+                font-family: Poppins-Medium;
+            }
+        }
+    }
+
+    .others-articles
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media screen and (max-width: 748px) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.comments-section
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2
+    {
+        &::after
+        {
+            left: 3rem;
+        }
+    }
+
+    .comment-area
+    {
+        margin-top: 3rem;
+
+        .comment-form
+        {
+            width: 32rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            input, textarea{
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                border-radius: 7px;
+
+                @media screen and (max-width: 748px) {
+                    width: 20rem;
+                }
+            }
+
+            .comment-btn
+            {
+                color: white;
+                background-color: $MC-Mandalay;
+                margin: 1rem;
+            }
+
+            textarea{
+                background-color: white;
+                box-shadow: 0px 0px 30px rgba(100,100,100,0.2);
+            }
+        }
+    }
+}
+
+.footer-section
+{
+    display: flex;
+    background-color: #130f07;
+    padding: 0 4rem;
+    padding-top: 4rem;
+    margin-top: 3.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .footer-content
+    {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 748px)
+        {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        nav
+        {
+            ul{
+                li{
+                    padding-bottom: 1rem;
+                    a{
+                        color: white;
+                        font-size: 0.9rem;
+
+                        &:hover
+                        {
+                            filter: brightness(0.7);
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 748px)
+            {
+                margin-top: 3rem;
+            }
+        }
+
+        .footer-contacts
+        {
+            @media screen and (max-width: 748px)
+            {
+                margin-top: 2rem;
+            }
+            span
+            {
+                color: white;
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+                padding-bottom: 1rem;
+                font-size: 0.8rem;
+
+                @media screen and (max-width: 748px)
+                {
+                    padding: 0;
+                    padding-bottom: 1rem;
+                }
+
+                img{
+                    width: 2rem;
+                    margin-right: 0.5rem;
+                }
+                
+            }
+
+            .social-midias
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    margin: 0 1rem;
+
+                    @media screen and (max-width: 748px)
+                    {
+                        margin: 0;
+                    }
+                    
+                    img{
+                        width: 2rem;
+                        margin-right: 1rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    p{
+        color: white;
+        padding: 2rem 0;
+        padding-top: 4rem;
+        font-size: 0.9rem;
+        text-align: center;
+
+        b
+        {
+            color: white;
+        }
+    }
+}

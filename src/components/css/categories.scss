@@ -1,0 +1,21 @@
+@import '../../App';
+
+.categories
+{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #ad7e2130;
+
+    ul{
+        display: inline-flex;
+
+        li{
+            padding-right: 2rem;
+
+            a{
+                font-size: 0.9rem;
+                font-family: Poppins-Medium;
+            }
+        }
+    }
+}
